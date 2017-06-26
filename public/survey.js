@@ -10,12 +10,17 @@ $("#citySubmit").on("click", function(event) {
 	var postData = new Array(2);
 	postData[0] = $('.q1').text();
 	postData[1] = $('.q2').text();
-	console.log(postData);
+	
   var status = {"firstName":"John", "lastName":"Doe"}
 
 	   $.post("/api/survey", status)
       .done(function(data) {
-        console.log(data);
+        var friendsArray = data.friendList;
+        console.log(friendsArray);
+
+        friendsArray.forEach(function(value,index){
+        	console.log(value.email);
+        })
         alert("Finding Nemo...");
       })
 
