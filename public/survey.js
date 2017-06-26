@@ -1,27 +1,64 @@
-$(".dropdown-menu li a").click(function () {
-    var selText = $(this).text();
-    $(this).closest('div').find('button[data-toggle="dropdown"]').html(selText + ' <span class="caret"></span>');
-    $(this).closest('.dropdown').removeClass("open");
-    return false;
-});
 
-$("#citySubmit").on("click", function(event) {
-	console.log(postData);
-	var postData = new Array(2);
-	postData[0] = $('.q1').text();
-	postData[1] = $('.q2').text();
+
+$("#findFriendSubmit").on("click", function(event) {
+
+var requestData = [];
+var findFriendData = {
+	"findFriendRequest":requestData
+}
+
+for(var questionCounter = 0;questionCounter < 10;questionCounter++)
+
+{
+
+	var counter = questionCounter + 1;
+
+	if( $('#dropdownMenu' + counter).val() === '1 (Strongly Disagree)') {
+		requestData[questionCounter] = '1';
+	} else  if($('#dropdownMenu' + counter).val()==='5 (Strongly Agree)')  {
+		requestData[questionCounter] = '5';
+	} else {
+		requestData[questionCounter] = $('#dropdownMenu' + counter).val();
+	}
 	
-  var status = {"firstName":"John", "lastName":"Doe"}
+	
+	console.log(requestData[questionCounter]);
+}
 
-	   $.post("/api/survey", status)
+	   $.post("/api/survey", findFriendData)
       .done(function(data) {
-        var friendsArray = data.friendList;
-        console.log(friendsArray);
+        var friendsArray = data;
+              
+               console.log(data);
+        $('#imagepreview').attr('src', data.photo);
+        $('#imagemodal').modal('show');
 
-        friendsArray.forEach(function(value,index){
-        	console.log(value.email);
-        })
-        alert("Finding Nemo...");
-      })
+      }) 
 
   });
+
+$( document ).ready(function() {
+
+	var myOptions = {
+    option1 : '1 (Strongly Disagree)',
+    option2 : '2',
+    option3 : '3',
+    option4 : '4',
+    option5 : '5 (Strongly Agree)',
+};
+
+var mySelect = $('.dropdown-menu');
+$.each(myOptions, function(val, text) {
+	console.log('<li><a href="#" data-value="' + text + '" ' +text+' </a> </li>');
+    mySelect.append($('<li><a href="#" data-value="' + text + '"> ' +text+' </a> </li>'));
+});
+
+
+$(".dropdown-menu li a").click(function () {
+$(this).parents(".dropdown").find('.btn').html($(this).text() + ' <span class="caret"></span>');
+  $(this).parents(".dropdown").find('.btn').val($(this).data('value'));
+  
+});
+
+});
+

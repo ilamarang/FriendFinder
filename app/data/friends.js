@@ -2,9 +2,9 @@
 friendsList :
 [
 {
-"name": "Ahmed",
+"name": "Cute Funny",
 "email":"123@google.com",
-"photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+"photo": "http://4.bp.blogspot.com/-XBHVmMlvP4w/VmsqEm1zkeI/AAAAAAABhzE/6vxIKM9hUH4/s1600/funny-animals-190-02.jpg",
 "scores": [
 "5",
 "1",
@@ -36,9 +36,9 @@ friendsList :
 ]
 },
 {
-"name": "Jeremiah Scanlon",
+"name": "JS",
 "email":"789@google.com",
-"photo": "https://avatars2.githubusercontent.com/u/8504998?v=3&s=460",
+"photo": "http://img.huffingtonpost.com/asset/2000_1000/577a13151800002400fa3c54.jpeg",
 "scores": [
 "5",
 "2",
@@ -72,7 +72,7 @@ friendsList :
 {
 "name": "Lou Ritter",
 "email":"1234@google.com",
-"photo": "https://m.facebook.com/photo.php?fbid=10208500699025296&id=1542229019&set=a.1549418665704.77596.1542229019&source=11",
+"photo": "https://i.ytimg.com/vi/GHhFtkGfaWU/hqdefault.jpg",
 "scores": [
 "4",
 "3",
@@ -89,7 +89,7 @@ friendsList :
 {
 "name": "Jordan Biason",
 "email":"3425@google.com",
-"photo": "https://scontent-ord1-1.xx.fbcdn.net/v/t1.0-9/12741971_10205764267089153_4212986785721953092_n.jpg?oh=4e18265f7d380167223a97fbd7eba278&oe=57B78445",
+"photo": "https://www.askideas.com/wp-content/uploads/2016/11/Funny-Pig-Face-Animal-Picture.jpg",
 "scores": [
 "4",
 "4",
