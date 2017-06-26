@@ -1,6 +1,7 @@
 var express = require('express');
 var apiRouter = express.Router();
 var path = require('path');
+var friendFinder = require('../app/services/findFriend')
 
 //Middle ware that is specific to this router
 apiRouter.use(function timeLog(req, res, next) {
@@ -9,13 +10,7 @@ apiRouter.use(function timeLog(req, res, next) {
 });
 
 
-// Define the about route
-apiRouter.post('/api/survey', function(req, res) {
-  console.log('Data obtained' + req.body);
-  var status = {"firstName":"John", "lastName":"Doe"}
-  res.json(status);
-  console.log(status);
-});
-
+// Define the surey route
+apiRouter.post('/api/survey', friendFinder.findFriend);
 
 module.exports = apiRouter;
