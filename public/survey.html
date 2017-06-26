@@ -1,0 +1,90 @@
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Friend Finder</title>
+      <!-- Latest compiled and minified CSS & JS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+      <script src="https://code.jquery.com/jquery.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="./custom.css">
+   </head>
+   <body>
+      <div class="container">
+         <div class="row main">
+            <div class="main-login main-center">
+               <h5>Find your best Friend!</h5>
+               <form class="" method="post" action="#">
+                  <div class="form-group">
+                     <label for="name" class="cols-sm-2 control-label">Your Name</label>
+                     <div class="cols-sm-10">
+                        <div class="input-group">
+                           <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                           <input type="text" class="form-control" name="name" id="name"  placeholder="Enter your Name"/>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="form-group">
+                     <label for="email" class="cols-sm-2 control-label">Your Pic Link</label>
+                     <div class="cols-sm-10">
+                        <div class="input-group">
+                           <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                           <input type="text" class="form-control" name="email" id="email"  placeholder="Enter your link to Picture"/>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="dropdown">
+                     <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Please Select an option
+                     <span class="caret"></span></button>
+                     <ul class="dropdown-menu" id = "q1">
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JavaScript</a></li>
+                     </ul>
+                  </div>
+					
+					<div class="dropdown">
+                     <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Please Select an option
+                     <span class="caret"></span></button>
+                     <ul class="dropdown-menu" id = "q2">
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JavaScript</a></li>
+                     </ul>
+                  </div>
+
+
+                  <div>	
+					
+
+                     <button type="button" id="citySubmit" class="btn btn-custom"> SUBMIT </button>
+					
+
+
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+      
+	<script type="text/javascript"> 
+		$("#citySubmit").on("click", function(event) {
+	console.log(postData);
+	var postData = new Array(2);
+	postData[0] = $('.q1').text();
+	postData[1] = $('.q2').text();
+	console.log(postData);
+  var status = {"firstName":"John", "lastName":"Doe"}
+
+	   $.post("/api/survey", status)
+      .done(function(data) {
+        console.log(data);
+        alert("Finding Nemo...");
+      });
+      
+
+})
+
+	</script>
+
+   </body>
+</html>
