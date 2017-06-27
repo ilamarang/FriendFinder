@@ -4,7 +4,7 @@ friendsList :
 {
 "name": "Cute Funny",
 "email":"123@google.com",
-"photo": "http://4.bp.blogspot.com/-XBHVmMlvP4w/VmsqEm1zkeI/AAAAAAABhzE/6vxIKM9hUH4/s1600/funny-animals-190-02.jpg",
+"photo": "http://s7d2.scene7.com/is/image/TWCRoadRunner/game-of-thrones-cersei",
 "scores": [
 "5",
 "1",
@@ -21,7 +21,7 @@ friendsList :
 {
 "name": "Jacob Deming",
 "email":"456@google.com",
-"photo": "https://pbs.twimg.com/profile_images/691785039043022849/oWsy8LNR.jpg",
+"photo": "http://ell.h-cdn.co/assets/cm/15/02/980x490/54ac5a56b870e_-_elle-game-of-thrones-fashion-beauty-ranks-opener-h-elh.jpg",
 "scores": [
 "4",
 "2",
@@ -38,7 +38,7 @@ friendsList :
 {
 "name": "JS",
 "email":"789@google.com",
-"photo": "http://img.huffingtonpost.com/asset/2000_1000/577a13151800002400fa3c54.jpeg",
+"photo": "http://cimg.tvgcdn.net/i/r/2015/01/06/4ea2504a-100a-4c8d-88d1-d65bbb3a577d/thumbnail/624x420/9fb81c811bae6efe7aad14af97ea8d7e/04-got-badass-ladies-sansa-stark1.jpg",
 "scores": [
 "5",
 "2",
@@ -87,9 +87,9 @@ friendsList :
 ]
 },
 {
-"name": "Jordan Biason",
+"name": "King Jefforey",
 "email":"3425@google.com",
-"photo": "https://www.askideas.com/wp-content/uploads/2016/11/Funny-Pig-Face-Animal-Picture.jpg",
+"photo": "https://typeset-beta.imgix.net/rehost%2F2016%2F9%2F13%2F4adf8a0d-0382-4354-9880-aeed9fea6d30.png",
 "scores": [
 "4",
 "4",

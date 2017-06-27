@@ -69,14 +69,14 @@ $("#fetchSurvey").on("click", function(e) {
 "scores": []
 }
 
-userProfileData.name = $("#name").val();
-userProfileData.email = $("#email").val();
+userProfileData.name = $("#username").val();
+userProfileData.photo = $("#picAddress").val();
 
-if(userProfileData.name=== '' || userProfileData.email==='') {
+if(userProfileData.name=== '' || userProfileData.photo==='') {
 	e.preventDefault()
 } else
 {
-	console.log('Hi');
+	console.log('User Input validated');
 }
 
 

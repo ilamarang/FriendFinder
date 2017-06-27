@@ -1,8 +1,9 @@
 body {
     font-family: 'chalkduster', fantasy, 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     overflow-x: hidden;
-    background-image: url("./characters.jpg");
+    background-image: url("./banner.jpg");
     padding-top: 1em;
+    color: white;
 }
 
 .form-signin {
