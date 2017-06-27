@@ -12,6 +12,7 @@ next();
 // Define the home page route
 router.get('/', function(req, res) {
   res.sendFile('/public/home.html',{'root': '../FriendFinder/'});
+  
 });
 
 // Define the about route

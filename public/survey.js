@@ -60,5 +60,26 @@ $(this).parents(".dropdown").find('.btn').html($(this).text() + ' <span class="c
   
 });
 
+
+$("#fetchSurvey").on("click", function() {
+	var userProfileData = {
+"name": "",
+"email":"",
+"photo": "",
+"scores": []
+}
+
+userProfileData.name = $("#name").text();
+userProfileData.email = $("#email").text();
+
+$.get("/survey", userProfileData) 
+.done(function(data) {
+        console.log("Routing Successful");
+
+      }) 
+
+})
+
+
 });
 
