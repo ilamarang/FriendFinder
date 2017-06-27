@@ -61,7 +61,7 @@ $(this).parents(".dropdown").find('.btn').html($(this).text() + ' <span class="c
 });
 
 
-$("#fetchSurvey").on("click", function() {
+$("#fetchSurvey").on("click", function(e) {
 	var userProfileData = {
 "name": "",
 "email":"",
@@ -69,14 +69,16 @@ $("#fetchSurvey").on("click", function() {
 "scores": []
 }
 
-userProfileData.name = $("#name").text();
-userProfileData.email = $("#email").text();
+userProfileData.name = $("#name").val();
+userProfileData.email = $("#email").val();
 
-$.get("/survey", userProfileData) 
-.done(function(data) {
-        console.log("Routing Successful");
+if(userProfileData.name=== '' || userProfileData.email==='') {
+	e.preventDefault()
+} else
+{
+	console.log('Hi');
+}
 
-      }) 
 
 })
 

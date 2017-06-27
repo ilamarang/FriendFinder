@@ -11,14 +11,20 @@ next();
 
 // Define the home page route
 router.get('/', function(req, res) {
-  res.sendFile('/public/home.html',{'root': '../FriendFinder/'});
-  
+  //res.sendFile('/public/home.html',{'root': '../FriendFinder/'});
+res.render('pages/home');
 });
 
 // Define the about route
-router.get('/survey', function(req, res) {
-  res.sendFile('/public/survey.html',{'root': '../FriendFinder/'});
-});
 
+
+router.post('/survey', function(req, res) {
+  console.log(req.body.name);
+  //res.sendFile('/public/survey.html',{'root': '../FriendFinder/'});
+  res.render('pages/survey',{
+    name: req.body.name,
+    email: req.body.email
+  })
+});
 
 module.exports = router;

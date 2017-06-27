@@ -10,6 +10,9 @@ var htmlRoutes = require('./routing/htmlRoutes');
 var app = express();
 var PORT = process.env.PORT || 3000;
 
+// set the view engine to ejs
+app.set('view engine', 'ejs');
+
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
