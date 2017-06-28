@@ -4,8 +4,11 @@ $("#findFriendSubmit").on("click", function(event) {
 
 var requestData = [];
 var findFriendData = {
-	"findFriendRequest":requestData
+	"findFriendRequest":requestData,
+	"name": $('#refName').text(),
+	"picAddress":$('#refAddress').text()
 }
+console.log(findFriendData.name);
 
 for(var questionCounter = 0;questionCounter < 10;questionCounter++)
 

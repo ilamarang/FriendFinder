@@ -23,7 +23,7 @@ router.post('/survey', function(req, res) {
   //res.sendFile('/public/survey.html',{'root': '../FriendFinder/'});
   res.render('pages/survey',{
     name: req.body.username,
-    email: req.body.picAddress
+    picAddress: req.body.picAddress
   })
 });
 
