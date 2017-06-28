@@ -60,8 +60,8 @@ $( document ).ready(function() {
 
 var mySelect = $('.dropdown-menu');
 $.each(myOptions, function(val, text) {
-	console.log('<li><a href="#" data-value="' + text + '" ' +text+' </a> </li>');
-    mySelect.append($('<li><a href="#" data-value="' + text + '"> ' +text+' </a> </li>'));
+	console.log('<li><a  data-value="' + text + '" ' +text+' </a> </li>');
+    mySelect.append($('<li><a data-value="' + text + '"> ' +text+' </a> </li>'));
 });
 
 
