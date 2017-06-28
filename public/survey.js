@@ -12,7 +12,15 @@ for(var questionCounter = 0;questionCounter < 10;questionCounter++)
 {
 
 	var counter = questionCounter + 1;
-
+	$('#myModalLabel').text('Your best Game of Throne Compatible Friend!');
+	if($('#dropdownMenu' + counter).val()=== '')
+	{
+		$('#myModalLabel').text('Please enter all the fields');
+		$('#imagepreview').attr('src', 'https://media.giphy.com/media/m6tmCnGCNvTby/giphy.gif');	
+		$('#imagemodal').modal('show');
+		return;
+	}
+	
 	if( $('#dropdownMenu' + counter).val() === '1 (Strongly Disagree)') {
 		requestData[questionCounter] = '1';
 	} else  if($('#dropdownMenu' + counter).val()==='5 (Strongly Agree)')  {
