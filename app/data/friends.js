@@ -2,7 +2,7 @@
 var friendsList  =
 [
 {
-"name": "Cute Funny",
+"name": "Cersei Lannister",
 "photo": "http://s7d2.scene7.com/is/image/TWCRoadRunner/game-of-thrones-cersei",
 "scores": [
 "5",
@@ -18,7 +18,7 @@ var friendsList  =
 ]
 },
 {
-"name": "Jacob Deming",
+"name": "Daenerys Targaryen",
 "photo": "http://ell.h-cdn.co/assets/cm/15/02/980x490/54ac5a56b870e_-_elle-game-of-thrones-fashion-beauty-ranks-opener-h-elh.jpg",
 "scores": [
 "4",
@@ -34,7 +34,7 @@ var friendsList  =
 ]
 },
 {
-"name": "JS",
+"name": "Sansa Stark",
 "photo": "http://cimg.tvgcdn.net/i/r/2015/01/06/4ea2504a-100a-4c8d-88d1-d65bbb3a577d/thumbnail/624x420/9fb81c811bae6efe7aad14af97ea8d7e/04-got-badass-ladies-sansa-stark1.jpg",
 "scores": [
 "5",
@@ -50,8 +50,8 @@ var friendsList  =
 ]
 },
 {
-"name": "Louis T. Delia",
-"photo": "https://pbs.twimg.com/profile_images/639214960049000449/lNCRC-ub.jpg",
+"name": "Ramsay Snow",
+"photo": "http://delightfullydysfunctional.com/wp-content/uploads/2016/05/ramsay-bolton-pic.jpg",
 "scores": [
 "3",
 "3",
@@ -66,8 +66,8 @@ var friendsList  =
 ]
 },
 {
-"name": "Lou Ritter",
-"photo": "https://i.ytimg.com/vi/GHhFtkGfaWU/hqdefault.jpg",
+"name": "Tyrion Lannister",
+"photo": "http://media.salon.com/2013/03/game_of_thrones_recap.jpg",
 "scores": [
 "4",
 "3",
